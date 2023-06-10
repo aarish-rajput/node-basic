@@ -44,7 +44,7 @@ app.post("/postLoc", async (req, res) => {
 });
 
 app.get("/getLoc", (req, res) => {
-  User.find({})
+  Location.find({})
     .then((data) => {
       res.send(data);
     })
